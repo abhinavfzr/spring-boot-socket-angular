@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+
+  spring-angular-socket:
+    build: spring-angular-socket/
+    restart: always
+    network_mode: "host"
+    hostname: localhost
+    ports:
+      - 8080:8080
+
